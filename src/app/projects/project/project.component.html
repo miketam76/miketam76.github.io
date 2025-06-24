@@ -1,0 +1,6 @@
+<div class="card">
+    <h3> {{ project.title }}</h3>
+    Last Updated: <time> {{ project.date }}</time>
+    <p>Summary:</p>
+    <p [innerHTML]="project.details"></p>
+</div>
