@@ -1,6 +1,25 @@
-footer { 
-    text-align: center; 
-    padding: 2rem; 
-    background-color: #0e1a0f; 
-    color: #a3d9a5; 
+footer {
+  background-color: #2f3e2f; /* dark forest green */
+  color: #dfe6dc; /* soft light text */
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer-credits p,
+.footer-copyright p {
+  margin: 0.2rem 0;
+}
+
+.footer-credits p {
+  color: #a9c5a2; /* lighter green for credits */
+  font-style: italic;
+}
+
+.footer p a {
+  color: #dfe6dc; /* ensure links are readable */
+  text-decoration: underline;
+}
+
+.footer p a:hover {
+  color: #b2d2a4; /* subtle hover effect */
 }
