@@ -24,7 +24,7 @@ export const BLOG_DATA = [
 
     {
         id: '3',
-        title: 'Project 3',
+        title: 'blog 3',
         date: 'January 1, 2024',
         details: 'Project 1',
     },

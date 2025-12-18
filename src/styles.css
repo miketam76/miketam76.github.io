@@ -1,4 +1,10 @@
 /* General styles */
+html {
+    scroll-behavior: smooth;
+    /* Match this value to your header's height (approx 80px) */
+    scroll-padding-top: 90px;
+}
+
 body { 
     font-family: 'Arial', sans-serif; 
     /* background: linear-gradient(to bottom, #2c3e2c, #1b2b1a); */ /* Smooth forest green transition */
@@ -28,7 +34,7 @@ a:hover {
 
 /* Buttons */
 button { 
-    background-color: #4caf50; /* Forest green button */
+    background-color: #2e7d32; /* Forest green button */
     color: white; 
     padding: 0.8rem 1.5rem; 
     border: none; 
@@ -39,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #388e3c; /* Darker green on hover */
+    background-color: #1b5e20; /* Darker green on hover */
 }
 
 /* Cards */
@@ -133,4 +139,17 @@ dialog {
 .leaf:nth-child(6) { left: 60%; animation-duration: 7s; animation-delay: 2.5s; }
 .leaf:nth-child(7) { left: 70%; animation-duration: 5s; animation-delay: 0.5s; }
 .leaf:nth-child(8) { left: 80%; animation-duration: 6.5s; animation-delay: 1s; }
+
+/* Accessibility: Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .leaf {
+        display: none !important; /* Removes moving leaves entirely */
+        animation: none !important;
+    }
+    
+    /* Also stops the smooth scroll if you added it */
+    html {
+        scroll-behavior: auto !important;
+    }
+}
 

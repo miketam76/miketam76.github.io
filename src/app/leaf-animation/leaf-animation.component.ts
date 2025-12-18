@@ -33,6 +33,8 @@ export class LeafAnimationComponent implements AfterViewInit {
         `fall ${Math.random() * 3 + 4}s linear infinite`
       );
       this.renderer.setStyle(leaf, 'animationDelay', `${Math.random() * 2}s`);
+      this.renderer.setAttribute(leaf, 'alt', ''); // Empty alt tells screen readers to skip it
+      this.renderer.setAttribute(leaf, 'aria-hidden', 'true'); // Further ensures it's ignored
 
       this.renderer.appendChild(leafContainer, leaf);
     }

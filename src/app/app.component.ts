@@ -5,7 +5,7 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { FooterComponent } from "./footer/footer.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { AboutMeComponent } from "./about-me/about-me.component"
-import { LeafAnimationComponent } from "../leaf-animation/leaf-animation.component";
+import { LeafAnimationComponent } from "./leaf-animation/leaf-animation.component";
 import { NgIf } from '@angular/common';
 
 
