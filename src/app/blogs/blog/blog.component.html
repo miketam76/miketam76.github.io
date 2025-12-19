@@ -1,5 +1,5 @@
 <article class="card">
     <h3> {{ blog.title }}</h3>
     <time> {{ blog.date }} </time>
-    <p> {{ blog.details }} </p> 
+    <p [innerHTML]="blog.details"></p> 
 </article>

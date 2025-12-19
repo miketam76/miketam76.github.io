@@ -12,10 +12,10 @@ import { BlogComponent } from './blog/blog.component';
 })
 
 export class BlogsComponent {
-   blogs = BLOG_DATA;
-   selectedBlogsId?: string;
+  blogs = BLOG_DATA;
+  selectedBlogsId?: string;
 
-   get selectedBlog() {
+  get selectedBlog() {
     return this.blogs.find( (blog) => blog.id === this.selectedBlogsId );
   }
 }
