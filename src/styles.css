@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
     color: #e0f2e0; /* Light greenish-white for readability */
     margin: 0; 
-    padding: 0; 
+    padding: 0;
 }
 
 /* Global headings */
@@ -94,22 +94,22 @@ dialog {
     border-radius: 10px;
     padding: 0;
     background: transparent;
-  }
-  
-  dialog::backdrop {
+}
+
+dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .dialog-wrapper {
+}
+
+.dialog-wrapper {
     background-color: #263a27;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     position: relative;
     color: #f0f8ff;
-  }
-  
-  .close-btn {
+}
+
+.close-btn {
     position: absolute;
     top: 0.5rem;
     right: 1rem;
@@ -118,8 +118,8 @@ dialog {
     color: #f0f8ff;
     font-size: 1.5rem;
     cursor: pointer;
-  }
-  
+}
+
 
 
 /* Falling leaf animation */
@@ -165,3 +165,19 @@ dialog {
     }
 }
 
+/* Ensure cards take up nearly the full width on mobile */
+@media (max-width: 480px) {
+    .blog-container, .project-container {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;    /* Center them for symmetry */
+        width: 100%;            /* Prevent horizontal scrolling */
+        padding: 0 10px;        /* Add tiny margin so cards don't touch screen edges */
+    }
+
+    .blog-card, .project-card {
+        width: 95% !important;  /* Force the card to expand */
+        max-width: none;        /* Remove any desktop width limits */
+        margin-bottom: 20px;    /* Give them breathing room between entries */
+    }
+}

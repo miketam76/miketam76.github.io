@@ -1,5 +1,10 @@
 main {
-    padding-top: 80px; /* Adjust to your header's height */
+    padding-top: 80px; 
+}
+
+/* Global resets to prevent overflow bars */
+* {
+    box-sizing: border-box;
 }
 
 body { 
@@ -7,26 +12,50 @@ body {
     background-color: #1b2b1a; 
     color: #d4e2d4; 
     margin: 0; 
-    padding: 0; 
+    padding: 0;
+    overflow-x: hidden; /* Safety net for responsive testing */
+    width: 100vw;
 }
 
 .hero { 
     text-align: center; 
-    padding: 4rem 2rem; 
-    /* Adding a 40% black overlay before the image URL */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/pexels-samuel-butikofer-3490375-5226950.jpg') no-repeat center center/cover; 
-    color: #f1f5f2; 
+    /* Vertical padding remains, horizontal padding becomes fluid */
+    padding: 4rem 5%; 
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../assets/pexels-samuel-butikofer-3490375-5226950.jpg') no-repeat center center/cover; 
+    color: #f1f5f2;
 }
 
 .hero h1 { 
-    font-size: 2.5rem;
-    /* Offset X, Offset Y, Blur Radius, Color */
+    /* Fits 2.5rem on desktop but scales down to 1.8rem on 375px mobile */
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
 }
 
 .hero p {
-    /* Helps the thinner slogan text stay visible */
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+    max-width: 600px; /* Keeps text from getting too wide on 1024px */
+    margin: 0 auto 1.5rem;
+}
+
+/* 1024px Viewpoint: Ensure the layout doesn't over-expand */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* 375px Viewpoint: Maximize available space for cards and text */
+@media (max-width: 480px) {
+    .hero {
+        padding: 2.5rem 1rem; /* Tightens padding to stop the "squeezed" look */
+    }
+    
+    .hero h1 {
+        line-height: 1.2;
+    }
 }
 
 .hero .cta { 
@@ -40,5 +69,5 @@ body {
 }
 
 .hero .cta:hover {
-    background-color: #1b5e20; /* Darker green on hover */
+    background-color: #1b5e20;
 }
