@@ -1,25 +1,43 @@
 footer {
-  background-color: #2f3e2f; /* dark forest green */
-  color: #dfe6dc; /* soft light text */
-  font-size: 0.9rem;
-  line-height: 1.4;
+  /* Deep forest green, nearly black to anchor the page */
+  background-color: rgba(13, 35, 14, 0.98); 
+  color: #f1f5f2;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  border-top: 3px solid #2e7d32; /* Thematic divider line */
+  margin-top: 6rem;
 }
 
-.footer-credits p,
-.footer-copyright p {
-  margin: 0.2rem 0;
+.footer-credits {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(46, 125, 50, 0.3);
+  padding-bottom: 1.5rem;
 }
 
 .footer-credits p {
-  color: #a9c5a2; /* lighter green for credits */
-  font-style: italic;
+  font-size: 0.8rem; /* Smaller "fine print" size */
+  line-height: 1.8;
+  opacity: 0.8;
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
 }
 
-.footer p a {
-  color: #dfe6dc; /* ensure links are readable */
+.footer-credits a {
+  color: #81c784; /* Light mint green for visibility */
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footer-credits a:hover {
   text-decoration: underline;
+  opacity: 1;
 }
 
-.footer p a:hover {
-  color: #b2d2a4; /* subtle hover effect */
+.footer-copyright {
+  font-weight: 500;
+}
+
+.footer-copyright p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
 }
