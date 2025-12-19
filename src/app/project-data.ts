@@ -4,10 +4,10 @@ export const PROJECT_DATA = [
 
     {
         id: '1',
-        title: 'The Forest Portfolio - Modern Angular Web App',
+        title: 'The Forest Blog - Modern Angular Web App',
         date: 'December 2025',
         details: `
-            <p><strong>Overview:</strong> A high-performance personal portfolio built with Angular 16, designed with a focus on immersive visuals and strict AODA compliance.</p>
+            <p><strong>Overview:</strong> A high-performance personal developer blog built with Angular 16, designed with a focus on immersive visuals and strict AODA compliance.</p>
             <p><strong>Technical Stack:</strong> Angular 16 (TypeScript), CSS Animations, Renderer2 API, HTML5 Semantic Elements.</p>
             <p><strong>Key Achievements:</strong>
                 <ul>

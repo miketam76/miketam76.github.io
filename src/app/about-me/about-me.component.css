@@ -1,5 +1,40 @@
 :host {
-    display: block;
-    padding: 0;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto; 
+  max-width: 90%; 
+  width: 650px; 
+  padding: 1.5rem; 
+  box-sizing: border-box;
+}
+
+.profile-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  margin: 1rem 0 2rem 0;
+  border: 3px solid #2e7d32;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+h2, p {
+  width: 100%;
+  text-align: left;
+}
+
+h2 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #f1f5f2;
+}
+
+strong {
+  color: #81c784; /* Highlight your IT and Gov experience in a forest green */
+}
