@@ -22,6 +22,18 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slight shadow for readability */
 }
 
+/* Section headers */
+.section-title {
+    text-align: center;
+    width: 100%; 
+    margin: 4rem 0 2rem 0; 
+    color: #2e7d32; /* forest green brand color */
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 /* Links */
 a { 
     color: #80c980; /* Light green for contrast */
