@@ -111,6 +111,11 @@ dialog::backdrop {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     position: relative;
     color: #f0f8ff;
+
+    /* CHROME SCROLLBARS */
+    max-height: 70vh;    /* Modal takes up 70% of screen height max */
+    overflow-y: auto;    /* Tells Chrome: "If content is too long, scroll here" */
+    display: block;      /* Ensures it behaves as a container */
 }
 
 .close-btn {
@@ -122,6 +127,33 @@ dialog::backdrop {
     color: #f0f8ff;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* Scrollbars styling */
+/* Chrome, Safari, and Edge */
+.dialog-wrapper::-webkit-scrollbar, ::-webkit-scrollbar {
+    width: 10px; /* Slimmer for a cleaner look */
+}
+
+.dialog-wrapper::-webkit-scrollbar-track, ::-webkit-scrollbar-track {
+    background: #1b2b1a; /* Dark forest floor color */
+    border-radius: 10px;
+}
+
+.dialog-wrapper::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+    background: #2e7d32; /* Forest green "path" */
+    border-radius: 10px;
+    border: 2px solid #1b2b1a; /* Adds a little "gap" around the thumb */
+}
+
+.dialog-wrapper::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:hover {
+    background: #4caf50; /* Brighter green when active */
+}
+
+/* Firefox */
+.dialog-wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: #2e7d32 #1b2b1a; /* thumb color | track color */
 }
 
 /* Falling leaf animation */
