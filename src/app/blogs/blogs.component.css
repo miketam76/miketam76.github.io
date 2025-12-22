@@ -33,7 +33,7 @@ ul {
 }
 
 /* Mobile Viewpoint (375px - 768px) */
-@media (min-width: 375px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .card {
         padding: 1rem;      /* Slightly reduced internal padding for more text room */
         margin-bottom: 1.5rem; 

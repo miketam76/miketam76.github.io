@@ -1,6 +1,5 @@
 <div class="card">
-    <h3> {{ project.title }}</h3>
-    Last Updated: <time> {{ project.date }}</time>
-    <p>Summary:</p>
+    <h3> Project Title: {{ project.title }}</h3>
+    Last Update: <time> {{ project.date }}</time>
     <p [innerHTML]="project.details"></p>
 </div>

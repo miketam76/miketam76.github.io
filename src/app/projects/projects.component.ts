@@ -6,7 +6,7 @@ import { ProjectComponent } from './project/project.component';
 
 @Component({ 
   selector: 'app-projects', 
-  imports: [ProjectComponent, NgFor, NgIf],
+  imports: [ProjectComponent, NgFor, /* NgIf */],
   templateUrl: './projects.component.html', 
   styleUrls: ['./projects.component.css'] 
 })

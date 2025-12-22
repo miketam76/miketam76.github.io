@@ -4,7 +4,7 @@
   align-items: center;
   margin: auto; 
   max-width: 600px; 
-  padding: 1.5rem; 
+  padding: 1.5rem;
   box-sizing: border-box;
 }
 
@@ -23,8 +23,9 @@ h2, p {
 }
 
 h2 {
-  color: #2e7d32;
+  color: #80c980; /* Same as other section headers */
   margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 p {

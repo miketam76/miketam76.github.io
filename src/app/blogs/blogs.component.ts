@@ -6,7 +6,7 @@ import { BlogComponent } from './blog/blog.component';
 
 @Component({ 
   selector: 'app-blogs', 
-  imports: [BlogComponent, NgFor, NgIf],
+  imports: [BlogComponent, NgFor, /* NgIf */],
   templateUrl: './blogs.component.html', 
   styleUrls: ['./blogs.component.css'] 
 })
