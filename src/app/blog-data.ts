@@ -93,22 +93,22 @@ export const BLOG_DATA = [
         details: `
             <h4>Welcome to my first blog post!</h4>
             
-            <p>This space is the culmination of a journey that began long before I started my degree at Algonquin College.</p>
+            <p>This space is the culmination of a journey that began long before I started my degree at <strong>Algonquin College</strong>.</p>
 
             <p>
-                For years, I worked in <strong>IT Support</strong>, solving hardware and software puzzles. That troubleshooting foundation led me into development, specifically during my 2024 student term at the <strong>Canada Revenue Agency (CRA)</strong>.
+                For years, I worked as an <strong>IT Support Technician</strong>, solving hardware and software puzzles. That troubleshooting foundation led me into development, specifically during my 2023–2024 student term at the <strong>Canada Revenue Agency (CRA)</strong>, where I worked within complex, enterprise-level environments.
             </p>
 
             <p>
-                I built this portfolio using <strong>Angular and TypeScript</strong>—skills I spent this month self-teaching to ensure I was ready for the demands of modern web standards. This blog is where I'll share the projects I’ve built and the technical challenges I tackle as I move from fixing systems to architecting them.
+                While my core programming logic was built using <strong>Java and Python</strong>, I built this portfolio using <strong>Angular and TypeScript</strong>. These are skills I have spent the last few months self-teaching to ensure I am ready for the demands of modern web standards. This blog is where I’ll share the projects I’ve built—ranging from deep-logic Java applications to the responsive Angular project you see here.
             </p>
 
             <p>
-                I chose a forest theme because nature is my primary inspiration. Biking the <strong>greenbelt paths</strong> here in Ottawa helps me clear my mind for complex coding. I also take walks through <strong>Hogs Back Park</strong> and <strong>Mooney's Bay</strong> to reflect on my progress.
+                I chose a forest theme because nature is my primary inspiration. Biking the <strong>Greenbelt paths</strong> here in Ottawa helps me clear my mind for complex coding. I also take walks through <strong>Hogs Back Park</strong> and <strong>Mooney's Bay</strong> to reflect on my progress.
             </p>
             
             <p>
-                Whether you’re a fellow developer or a former colleague, I hope this space offers a useful perspective on technical growth and professional evolution.
+                Whether you’re a fellow developer or a former colleague, I hope this space offers a useful perspective on technical growth and professional evolution as I transition from fixing systems to architecting them.
             </p>
 
             <p>Thanks for stopping by!</p>

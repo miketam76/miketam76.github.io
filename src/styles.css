@@ -12,7 +12,8 @@ html {
 body { 
     font-family: 'Arial', sans-serif; 
     /* background: linear-gradient(to bottom, #2c3e2c, #1b2b1a); */ /* Smooth forest green transition */
-    background: url("./assets/pexels-matthew-montrone-230847-1179229.jpg");
+    /* background: url("./assets/pexels-matthew-montrone-230847-1179229.jpg"); */
+    background: url("./assets/pexels-matthew-montrone-230847-1179229.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #e0f2e0; /* Light greenish-white for readability */
