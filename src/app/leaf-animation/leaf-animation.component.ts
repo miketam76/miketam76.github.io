@@ -19,6 +19,11 @@ export class LeafAnimationComponent implements AfterViewInit {
 
     document.body.appendChild(leafContainer);
 
+    // Determine density based on established viewpoints
+    const maxMobileViewPoint = 768;
+    const isMobile = window.innerWidth <= maxMobileViewPoint;
+    const leafCount = isMobile ? 4 : 8; // Cuts the count in half for mobile
+
     for (let i = 0; i < 8; i++) {
       const leaf = this.renderer.createElement('img');
       leaf.src = 'assets/leaf.png'; // Ensure leaf.png is in src/assets

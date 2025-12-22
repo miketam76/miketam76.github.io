@@ -1,8 +1,4 @@
-main {
-    padding-top: 80px; 
-}
-
-/* Global resets to prevent overflow bars */
+/* --- Global & Layout --- */
 * {
     box-sizing: border-box;
 }
@@ -13,21 +9,34 @@ body {
     color: #d4e2d4; 
     margin: 0; 
     padding: 0;
-    overflow-x: hidden; /* Safety net for responsive testing */
-    width: 100vw;
+    overflow-x: hidden; 
 }
 
+main {
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* --- Hero Section (Aligned to match site-section width) --- */
 .hero { 
-    text-align: center; 
-    /* Vertical padding remains, horizontal padding becomes fluid */
+    text-align: center;
     padding: 4rem 5%; 
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                 url('../assets/pexels-samuel-butikofer-3490375-5226950.jpg') no-repeat center center/cover; 
     color: #f1f5f2;
+
+    /* Matching the site-section container logic */
+    max-width: 1200px; 
+    width: 100%;
+    margin: 20px auto; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 { 
-    /* Fits 2.5rem on desktop but scales down to 1.8rem on 375px mobile */
     font-size: clamp(1.8rem, 8vw, 2.5rem);
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     margin-bottom: 1rem;
@@ -36,38 +45,46 @@ body {
 .hero p {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     font-size: clamp(0.95rem, 4vw, 1.1rem);
-    max-width: 600px; /* Keeps text from getting too wide on 1024px */
+    max-width: 600px;
     margin: 0 auto 1.5rem;
 }
 
-/* 1024px Viewpoint: Ensure the layout doesn't over-expand */
-@media (max-width: 1024px) {
+/* --- Content Sections --- */
+.site-section {
+    width: 100%; /* Spans full width to allow internal alignment */
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 2rem 0;
+}
+
+#blogs, #projects {
+    width: 95%; /* Matches the Hero's width percentage */
+    max-width: 1200px; 
+    box-sizing: border-box;
+}
+
+/* Media Queries */
+
+/* Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
     .hero {
         padding: 3rem 1.5rem;
     }
 }
 
-/* 375px Viewpoint: Maximize available space for cards and text */
-@media (max-width: 480px) {
+/* Mobile (375px - 768px) */
+@media (max-width: 768px) {
     .hero {
-        padding: 2.5rem 1rem; /* Tightens padding to stop the "squeezed" look */
+        padding: 2.5rem 1rem;
+        width: 100%; /* Flush to edges on mobile */
+        margin: 0 0 20px 0;
+        border-radius: 0;
     }
-    
-    .hero h1 {
-        line-height: 1.2;
+
+    #blogs, #projects {
+        width: 100%; /* Matches Hero fluidity on mobile */
+        padding: 0 10px;
     }
-}
-
-.hero .cta { 
-    background-color: #2e7d32;
-    color: white; 
-    padding: 0.8rem 1.5rem; 
-    border: none; 
-    border-radius: 5px; 
-    font-size: 1rem; 
-    cursor: pointer;
-}
-
-.hero .cta:hover {
-    background-color: #1b5e20;
 }

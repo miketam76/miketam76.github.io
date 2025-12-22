@@ -1,29 +1,30 @@
 <app-header></app-header>
 <app-leaf-animation></app-leaf-animation>
 
-<section class="hero">
-    <h1>Welcome to My Developer Blog</h1>
-    <p>Sharing my coding journey, projects, and the lessons I’ve learned along the way.</p>
-    <button class="cta" (click)="aboutMeDialog.showModal()">About Me</button>
-</section>
+<main>
+    <section class="hero">
+        <h1>Welcome to My Developer Blog</h1>
+        <p>Sharing my coding journey, projects, and the lessons I’ve learned along the way.</p>
+        <button class="cta" (click)="aboutMeDialog.showModal()">About Me</button>
+    </section>
 
-<dialog #aboutMeDialog (click)="onDialogClick($event)">
-    <div class="dialog-wrapper" (click)="$event.stopPropagation()">
-        <button class="close-btn" (click)="aboutMeDialog.close()">×</button>
-        <app-about-me></app-about-me>
-    </div>
-</dialog>
+    <dialog #aboutMeDialog (click)="onDialogClick($event)">
+        <div class="dialog-wrapper" (click)="$event.stopPropagation()">
+            <button class="close-btn" (click)="aboutMeDialog.close()">×</button>
+            <app-about-me></app-about-me>
+        </div>
+    </dialog>
 
-<section class="section">
+    <section class="site-section">
 
-    <div id="blogs">
-        <app-blogs></app-blogs>
-    </div>
+        <div id="blogs">
+            <app-blogs></app-blogs>
+        </div>
 
-    <div id="projects">
-        <app-projects></app-projects>
-    </div>
+        <div id="projects">
+            <app-projects></app-projects>
+        </div>
 
-</section>
-
+    </section>   
+</main>
 <app-footer></app-footer>

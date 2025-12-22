@@ -1,6 +1,42 @@
+:host {
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* Essential to prevent overflow bars */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Removes the bullets so it looks like a clean stack */
+}
+
 .card { 
-    background-color: #263a27; 
+    background-color: rgba(38, 58, 39, 0.9); /* Slight transparency */
     padding: 1.5rem; 
-    margin: 1rem; 
+    margin: 0 0 2rem 0;
     border-radius: 8px; 
+    color: #f5f5f5; /* Softer white for readability */
+    font-family: "Open Sans", sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* More subtle text shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+
+    /* Ensure the card content itself is fluid */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Tablet/Small Desktop Viewpoint (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        padding: 2rem;      /* More generous space for tablet layouts */
+    }
+}
+
+/* Mobile Viewpoint (375px - 768px) */
+@media (min-width: 375px) and (max-width: 768px) {
+    .card {
+        padding: 1rem;      /* Slightly reduced internal padding for more text room */
+        margin-bottom: 1.5rem; 
+        border-radius: 0;   /* Optional: Makes card flush with container edges on mobile */
+    }
 }

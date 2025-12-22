@@ -1,7 +1,10 @@
-/* General styles */
+/* --- Global Resets & Body --- */
+* {
+    box-sizing: border-box; /* Crucial for width calculation */
+}
+
 html {
     scroll-behavior: smooth;
-    /* Match this value to your header's height (approx 80px) */
     scroll-padding-top: 90px;
 }
 
@@ -14,6 +17,7 @@ body {
     color: #e0f2e0; /* Light greenish-white for readability */
     margin: 0; 
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* Global headings */
@@ -26,9 +30,9 @@ h1, h2, h3, h4, h5, h6 {
 .section-title {
     text-align: center;
     width: 100%; 
-    margin: 4rem 0 2rem 0; 
-    color: #2e7d32; /* forest green brand color */
-    font-size: 2rem;
+    margin: 3rem 0 1.5rem 0;
+    color: #80c980; /* lighter green for contrast */
+    font-size: clamp(1.5rem, 5vw, 2.2rem); /* Adjusts based on viewpoint width */
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -120,22 +124,22 @@ dialog::backdrop {
     cursor: pointer;
 }
 
-
-
 /* Falling leaf animation */
 @keyframes fall {
     0% {
-        transform: translateY(0) rotate(0deg);
+        transform: translateY(-10vh) rotate(0deg);
         opacity: 1;
     }
     100% {
-        transform: translateY(100vh) rotate(360deg);
+        transform: translateY(110vh) rotate(360deg);
         opacity: 0;
     }
 }
 
 .leaf {
     position: absolute;
+    pointer-events: none; /* Does nothing if user clicks on a leaf */
+    z-index: 1000;
     top: -10%; /* Start above the screen */
     width: 40px;
     height: auto;
@@ -162,22 +166,5 @@ dialog::backdrop {
     /* Also stops the smooth scroll if you added it */
     html {
         scroll-behavior: auto !important;
-    }
-}
-
-/* Ensure cards take up nearly the full width on mobile */
-@media (max-width: 480px) {
-    .blog-container, .project-container {
-        display: flex;
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center;    /* Center them for symmetry */
-        width: 100%;            /* Prevent horizontal scrolling */
-        padding: 0 10px;        /* Add tiny margin so cards don't touch screen edges */
-    }
-
-    .blog-card, .project-card {
-        width: 95% !important;  /* Force the card to expand */
-        max-width: none;        /* Remove any desktop width limits */
-        margin-bottom: 20px;    /* Give them breathing room between entries */
     }
 }
