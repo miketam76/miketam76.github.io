@@ -21,7 +21,7 @@ I am a **Junior Software Developer** and **Algonquin College** graduate with a b
 ## 🌟 Key Features
 - **Responsive Layout:** Perfectly aligned sections from mobile (375px) to desktop (1200px).
 - **Custom Aesthetic:** Dark forest theme with stylized scrollbars synchronized across Chrome and Firefox.
-- **Performance Optimized:** 55%+ Lighthouse performance score via asset compression and WebP formatting.
+- **Performance Optimized:** 80%+ Lighthouse performance score via asset compression and WebP formatting.
 - **AODA Ready:** Built with accessibility in mind, featuring motion-reduction support for animations.
 
 ## 📁 Project Highlights
