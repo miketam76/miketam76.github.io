@@ -25,8 +25,14 @@ I am a **Junior Software Developer** and **Algonquin College** graduate with a b
 - **AODA Ready:** Built with accessibility in mind, featuring motion-reduction support for animations.
 
 ## 📁 Project Highlights
-- **FitForge:** A full-stack fitness tracker built with Angular and Java.
-- **Enigma Engine:** Deep-logic cryptography tool developed in Java.
+
+### 🛡️ Enigma Engine
+**Tech:** Pure Java  
+A deep-logic cryptography application developed to explore complex algorithmic structures and data security. This project serves as a core demonstration of my backend development skills and my ability to architect logic-heavy systems using **Pure Java**.
+
+### 🏋️ FitForge (Design System)
+**Tech:** Figma  
+A comprehensive Design System created to ensure UI consistency and accessibility for a fitness-tracking platform. This project showcases my proficiency in **Figma**, user experience design, and the creation of standardized components ready for frontend implementation.
 
 ## 💻 Local Setup
 To run this project locally, ensure you have the [Angular CLI](https://angular.io/cli) installed.
