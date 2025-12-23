@@ -1,59 +1,40 @@
-# Myforestblog
+# 🌲 My Forest Journey | Portfolio of Moon (Mike) Tam
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+A professional portfolio website documenting my evolution from technical troubleshooting to software architecture. Inspired by the quiet focus of the Ottawa Greenbelt trails.
 
-## Development server
+## 🚀 Live Demo
+**View the live site here:** [myforestblog.onrender.com](https://myforestblog.onrender.com)
 
-To start a local development server, run:
+## 👤 About Me
+I am a **Junior Software Developer** and **Algonquin College** graduate with a background as an **IT Support Technician**. This portfolio serves as a live record of my journey—bridging my foundation in **Java** and **Python** with modern, accessible web development using **Angular**.
 
-```bash
-ng serve
-```
+- **Education:** Web Development & Internet Applications @ Algonquin College
+- **Experience:** Student term at the Canada Revenue Agency (CRA) (2023–2024)
+- **Mindset:** Troubleshooting-first approach to building systems, gained through years in IT support.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠 Tech Stack
+- **Frontend:** Angular, TypeScript, HTML5, CSS3
+- **Languages:** Java, Python, JavaScript
+- **Optimization:** WebP Image Conversion, Responsive Design (375px+), AODA/WCAG Compliance
+- **Deployment:** Render (Static Site), GitHub Pages
 
-## Code scaffolding
+## 🌟 Key Features
+- **Responsive Layout:** Perfectly aligned sections from mobile (375px) to desktop (1200px).
+- **Custom Aesthetic:** Dark forest theme with stylized scrollbars synchronized across Chrome and Firefox.
+- **Performance Optimized:** 55%+ Lighthouse performance score via asset compression and WebP formatting.
+- **AODA Ready:** Built with accessibility in mind, featuring motion-reduction support for animations.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📁 Project Highlights
+- **FitForge:** A full-stack fitness tracker built with Angular and Java.
+- **Enigma Engine:** Deep-logic cryptography tool developed in Java.
 
-```bash
-ng generate component component-name
-```
+## 💻 Local Setup
+To run this project locally, ensure you have the [Angular CLI](https://angular.io/cli) installed.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. Clone the repository: `git clone https://github.com/miketam76/your-repo-name.git`
+2. Install dependencies: `npm install`
+3. Start the dev server: `ng serve`
+4. Navigate to `http://localhost:4200/`
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+*Created by [Moon (Mike) Tam](https://www.linkedin.com/in/miketam1976/) - 2025*
