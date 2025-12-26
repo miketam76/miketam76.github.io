@@ -3,7 +3,7 @@
 A professional portfolio website documenting my evolution from technical troubleshooting to software architecture. Inspired by the quiet focus of the Ottawa Greenbelt trails.
 
 ## 🚀 Live Demo
-**View the live site here:** [myforestblog.onrender.com](https://myforestblog.onrender.com)
+**View the live site here:** [https://bit.ly/MoonTamDeveloper](https://bit.ly/MoonTamDeveloper)
 
 ## 👤 About Me
 I am a **Junior Software Developer** and **Algonquin College** graduate with a background as an **IT Support Technician**. This portfolio serves as a live record of my journey—bridging my foundation in **Java** and **Python** with modern, accessible web development using **Angular**.
