@@ -1,3 +1,4 @@
+![Deploy Status](https://github.com/miketam76/miketam76.github.io/actions/workflows/deploy.yml/badge.svg)
 # 🌲 My Forest Journey | Portfolio of Moon (Mike) Tam
 
 A professional portfolio website documenting my evolution from technical troubleshooting to software architecture. Inspired by the quiet focus of the Ottawa Greenbelt trails.
