@@ -15,7 +15,6 @@ I am a **Junior Software Developer** and **Algonquin College** graduate with a b
 
 ## 🛠 Tech Stack
 - **Frontend:** Angular, TypeScript, HTML5, CSS3
-- **Languages:** Java, Python, JavaScript
 - **Optimization:** WebP Image Conversion, Responsive Design (375px+), AODA/WCAG Compliance
 - **Deployment:** GitHub Pages
 
