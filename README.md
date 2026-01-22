@@ -17,7 +17,7 @@ I am a **Junior Software Developer** and **Algonquin College** graduate with a b
 - **Frontend:** Angular, TypeScript, HTML5, CSS3
 - **Languages:** Java, Python, JavaScript
 - **Optimization:** WebP Image Conversion, Responsive Design (375px+), AODA/WCAG Compliance
-- **Deployment:** Render (Static Site), GitHub Pages
+- **Deployment:** GitHub Pages
 
 ## 🌟 Key Features
 - **Responsive Layout:** Perfectly aligned sections from mobile (375px) to desktop (1200px).
@@ -38,7 +38,7 @@ A comprehensive Design System created to ensure UI consistency and accessibility
 ## 💻 Local Setup
 To run this project locally, ensure you have the [Angular CLI](https://angular.io/cli) installed.
 
-1. Clone the repository: `git clone https://github.com/miketam76/your-repo-name.git`
+1. Clone the repository: `git clone https://github.com/miketam76/miketam76.github.io.git`
 2. Install dependencies: `npm install`
 3. Start the dev server: `ng serve`
 4. Navigate to `http://localhost:4200/`
