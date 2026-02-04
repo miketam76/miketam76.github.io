@@ -1,6 +1,44 @@
 // blog-data.ts
 export const BLOG_DATA = [
     {
+        id: '5',
+        title: 'Legacy and Logic: Connecting the Past to the Present',
+        date: 'February 4, 2026',
+        details: `
+            <h4>Current Focus: C#, PHP, and New Workflows</h4>
+            
+            <p>
+                My studies at Algonquin have intensified lately. I am currently deep-diving into <strong>C# and ASP.NET Core with Razor Pages</strong>, while simultaneously working with modern <strong>PHP</strong>. For my local development environment, I’ve switched to <strong>Laravel Herd</strong>, which has significantly streamlined my workflow. 
+            </p>
+
+            <p>
+                This term also marks my first serious integration of <strong>GitHub Copilot</strong>. Rather than just letting it write code, I am focusing on mastering prompt engineering to better understand how to guide code generation for academic and professional development. It’s a tool that requires a different kind of analytical thinking—knowing exactly what to ask to get the most efficient logic.
+            </p>
+
+            <p>
+                Looking ahead, I plan to feature a dedicated <strong>C# ASP.NET Core project</strong> right here on this site. Transitioning from front-end focus to these more robust backend frameworks is a challenging but necessary step in my growth.
+            </p>
+
+            <h4>The Search for Spring 2026</h4>
+
+            <p>
+                As I move through this semester, a major priority is securing a <strong>co-op placement for Spring 2026</strong>. I’m looking for an environment where I can bridge the gap between these academic projects and real-world enterprise needs. Whether it's working within a government department or a local dev shop, my goal is to apply my background in IT support and my current dev stack to a professional team.
+            </p>
+
+            <h4>A Personal Project on the Horizon</h4>
+
+            <p>
+                Beyond the code, I’ve been reflecting on my family’s legacy here in Ottawa. My father, <strong>Fang Tam</strong>, was a fixture at the <strong>Marco Polo restaurant</strong> on Bank Street for years, and I have a collection of photos and stories from that era that deserve a home.
+            </p>
+
+            <p>
+                I am currently planning a <strong>WordPress-based photo album</strong> to host these archives. Each photo will have its own background story, preserving that piece of Ottawa's history. Balancing this personal project with my academic workload is a challenge, but one that feels important to take on.
+            </p>
+            
+            <p>Whether it's refactoring a Razor Page or scanning an old family photo, it’s all part of the same goal: to build for the future and remember your roots.</p>
+        `
+    },
+    {
         id: '4',
         title: 'Mission Accomplished: Launching the Forest Journey',
         date: 'December 24, 2025',
