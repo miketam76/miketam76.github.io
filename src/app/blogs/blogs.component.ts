@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { NgFor } from '@angular/common'; // For Legacy support prior to Angular 16
-import { NgIf } from '@angular/common'; // For Legacy support prior to Angular 16
-import { BLOG_DATA } from '../blog-data';
+import { Component, OnInit } from '@angular/core';
+import { NgFor } from '@angular/common';
+import { DataService } from '../services/data.service';
 import { BlogComponent } from './blog/blog.component';
+import { Blog } from './blog/blog.model';
 
 @Component({ 
   selector: 'app-blogs', 
@@ -11,9 +11,17 @@ import { BlogComponent } from './blog/blog.component';
   styleUrls: ['./blogs.component.css'] 
 })
 
-export class BlogsComponent {
-  blogs = BLOG_DATA;
+export class BlogsComponent implements OnInit {
+  blogs: Blog[] = [];
   selectedBlogsId?: string;
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(): void {
+    this.dataService.getBlogs().subscribe((data: Blog[]) => {
+      this.blogs = data;
+    });
+  }
 
   get selectedBlog() {
     return this.blogs.find( (blog) => blog.id === this.selectedBlogsId );
