@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Project } from './project.model'
 
 @Component({
@@ -9,4 +10,10 @@ import { Project } from './project.model'
 })
 export class ProjectComponent {
   @Input({ required: true }) project!: Project;
+
+  constructor(private sanitizer: DomSanitizer) {}
+
+  getSafeHtml(): SafeHtml {
+    return this.sanitizer.sanitize(1, this.project.details) as SafeHtml;
+  }
 }

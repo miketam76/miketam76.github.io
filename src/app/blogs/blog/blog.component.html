@@ -1,5 +1,5 @@
 <article class="card">
     <h3> Post Title: {{ blog.title }}</h3>
     Post Date: <time> {{ blog.date }} </time>
-    <p [innerHTML]="blog.details"></p> 
+    <p [innerHTML]="getSafeHtml()"></p> 
 </article>

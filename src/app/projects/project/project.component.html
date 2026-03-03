@@ -1,5 +1,5 @@
 <div class="card">
     <h3> Project Title: {{ project.title }}</h3>
     Last Update: <time> {{ project.date }}</time>
-    <p [innerHTML]="project.details"></p>
+    <p [innerHTML]="getSafeHtml()"></p>
 </div>
