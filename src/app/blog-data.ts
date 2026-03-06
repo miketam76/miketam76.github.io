@@ -1,6 +1,25 @@
 // blog-data.ts
 export const BLOG_DATA = [
     {
+        id: '6',
+        title: 'Recently integrated all blog and project posting to be hosted on Mongo DB Atlas powered by Express.JS',
+        date: 'March 6, 2026',
+        details: `
+            <h4>Tech Stack Upgrade: Transitioning to the Cloud</h4>
+            <p>
+                Today marks a significant milestone in the evolution of this portfolio. I have officially transitioned from hardcoded local data files to a dynamic, cloud-hosted architecture. All blog posts and project entries are now being pulled in real-time from <strong>MongoDB Atlas</strong>.
+            </p>
+
+            <p>
+                This integration is powered by a custom-built <strong>Express.js API</strong>, acting as the bridge between the database and my Angular frontend. This move not only streamlines my content management via MongoDB Compass but also sets the stage for more complex features as I continue to explore the capabilities of the MEAN stack.
+            </p>
+
+            <p>
+                By hosting the backend on <strong>Render</strong> and securing it with refined CORS policies and IP whitelisting, I've managed to build a professional-grade environment that prioritizes both data integrity and security.
+            </p>
+        `
+    },
+    {
         id: '5',
         title: 'Legacy and Logic: Connecting the Past to the Present',
         date: 'February 4, 2026',
