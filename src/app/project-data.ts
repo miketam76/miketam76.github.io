@@ -2,17 +2,17 @@
 export const PROJECT_DATA = [
     {
         id: '1',
-        title: 'The Forest Blog - Modern Angular Web App',
-        date: 'December 2025',
+        title: 'Forest API - Node.js & Express Middleware',
+        date: 'March 2026',
         details: `
-            <p><strong>Overview:</strong> A high-performance personal developer blog built with Angular 16, serving as a live demonstration of my front-end foundation moving toward full-stack architecture.</p>
-            <p><strong>Technical Stack:</strong> Angular 16 (TypeScript), CSS Animations, Renderer2 API, HTML5 Semantic Elements.</p>
+            <p><strong>Overview:</strong> A robust RESTful API built with Node.js and Express.js, serving as the secure data bridge between MongoDB Atlas and the Angular frontend.</p>
+            <p><strong>Technical Stack:</strong> Node.js, Express.js, MongoDB Atlas (Cloud), CORS Middleware, Dotenv, Render (Cloud Hosting).</p>
             <p><strong>Key Achievements:</strong>
                 <ul>
-                    <li><strong>Immersive UI:</strong> Engineered a custom falling leaf animation using Angular's Renderer2 for efficient DOM manipulation without sacrificing performance.</li>
-                    <li><strong>AODA Compliance:</strong> Implemented "Reduce Motion" safety triggers via CSS media queries and optimized color contrast ratios for high accessibility standards.</li>
-                    <li><strong>Component Architecture:</strong> Built a modular, scalable structure using Standalone Components and centralized data management in TypeScript.</li>
-                    <li><strong>Modern Navigation:</strong> Utilized CSS-only smooth scrolling and scroll-padding to ensure a seamless "ease-in-out" transition between site sections.</li>
+                    <li><strong>Cloud Data Management:</strong> Migrated legacy local JSON storage to a distributed MongoDB Atlas cluster, enabling real-time content updates without redeploying the frontend.</li>
+                    <li><strong>Network Security:</strong> Implemented strict CIDR-based IP whitelisting and CORS origin validation to protect the API from unauthorized external requests.</li>
+                    <li><strong>Fail-Safe Architecture:</strong> Integrated RxJS error-handling in the frontend to automatically fallback to local data if the cloud API is unreachable.</li>
+                    <li><strong>Modern Deployment:</strong> Managed a continuous deployment pipeline via Render, configuring environment variables and port-binding for high-availability cloud hosting.</li>
                 </ul>
             </p>
         `
