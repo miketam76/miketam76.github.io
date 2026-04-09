@@ -253,24 +253,48 @@ dialog::backdrop {
 /* Falling leaf animation */
 @keyframes fall {
     0% {
-        transform: translateY(-10vh) rotate(0deg);
+        transform: translateY(-10vh) rotate(0deg) scaleX(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50vh) rotate(180deg) scaleX(1.2);
         opacity: 1;
     }
     100% {
-        transform: translateY(110vh) rotate(360deg);
+        transform: translateY(110vh) rotate(360deg) scaleX(1);
         opacity: 0;
+    }
+}
+
+@keyframes drift-left {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes drift-right {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
     }
 }
 
 .leaf {
     position: absolute;
-    pointer-events: none; /* Does nothing if user clicks on a leaf */
+    pointer-events: none;
     z-index: 1000;
-    top: -10%; /* Start above the screen */
+    top: -10%;
     width: 40px;
     height: auto;
     opacity: 0.9;
     animation: fall linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .leaf:nth-child(1) { left: 10%; animation-duration: 6s; animation-delay: 1s; }
