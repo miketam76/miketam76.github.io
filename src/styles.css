@@ -1,3 +1,50 @@
+/* ==================== DESIGN SYSTEM: CSS VARIABLES ==================== */
+:root {
+    /* Colors */
+    --primary-green: #2a5a3a;
+    --dark-green: #1b2b1a;
+    --accent-green: #4caf50;
+    --accent-green-hover: #5cb85c;
+    --text-light: #d4e2d4;
+    --text-lighter: #e0f2e0;
+    --card-bg: rgba(38, 58, 39, 0.9);
+    --card-bg-hover: rgba(45, 70, 50, 1);
+    --deep-forest: #0e1a0f;
+    --button-dark: #2e7d32;
+    --button-hover: #1b5e20;
+    --link-accent: #a3d9a5;
+    --link-hover: #d1f5d3;
+    
+    /* Spacing Scale (8px grid system) */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    
+    /* Typography */
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial', sans-serif;
+    --font-display: 'Space Mono', monospace;
+    --line-height-body: 1.6;
+    --line-height-heading: 1.3;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.4);
+    --shadow-xl: 0 8px 16px rgba(0, 0, 0, 0.5);
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    
+    /* Transitions */
+    --transition-fast: 150ms;
+    --transition-smooth: 300ms;
+}
+
 /* --- Global Resets & Body --- */
 
 * {
@@ -10,85 +57,115 @@ html {
 }
 
 body { 
-    font-family: 'Arial', sans-serif; 
-    /* background: linear-gradient(to bottom, #2c3e2c, #1b2b1a); */ /* Smooth forest green transition */
-    /* background: url("./assets/pexels-matthew-montrone-230847-1179229.jpg"); */
+    font-family: var(--font-main);
     background: url("./assets/pexels-matthew-montrone-230847-1179229.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #e0f2e0; /* Light greenish-white for readability */
+    color: var(--text-lighter);
     margin: 0; 
     padding: 0;
     overflow-x: hidden;
+    line-height: var(--line-height-body);
 }
 
 /* Global headings */
 h1, h2, h3, h4, h5, h6 { 
-    color: #d4e2d4; 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slight shadow for readability */
+    color: var(--text-light);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    line-height: var(--line-height-heading);
 }
 
 /* Section headers */
 .section-title {
     text-align: center;
     width: 100%; 
-    margin: 3rem 0 1.5rem 0;
-    color: #80c980; /* lighter green for contrast */
-    font-size: clamp(1.5rem, 5vw, 2.2rem); /* Adjusts based on viewpoint width */
+    margin: var(--space-xl) 0 var(--space-lg) 0;
+    color: var(--accent-green);
+    font-size: clamp(1.5rem, 5vw, 2.2rem);
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-family: var(--font-display);
 }
 
 /* Links */
 a { 
-    color: #80c980; /* Light green for contrast */
+    color: var(--accent-green);
     text-decoration: none;
+    position: relative;
+    transition: color var(--transition-fast);
 }
 
-a:hover {
-    color: #4caf50; /* Brighter green for hover effect */
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--accent-green);
+    transition: width var(--transition-fast);
+}
+
+a:hover::after {
+    width: 100%;
 }
 
 /* Buttons */
 button { 
-    background-color: #2e7d32; /* Forest green button */
+    background-color: var(--button-dark);
     color: white; 
-    padding: 0.8rem 1.5rem; 
+    padding: var(--space-sm) var(--space-md);
     border: none; 
-    border-radius: 5px; 
+    border-radius: var(--radius-md);
     font-size: 1rem; 
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
+    transition: all var(--transition-smooth);
+    font-weight: 600;
+    font-family: var(--font-main);
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
 }
 
 button:hover {
-    background-color: #1b5e20; /* Darker green on hover */
+    background-color: var(--button-hover);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+}
+
+button:active {
+    transform: scale(0.98);
 }
 
 /* Cards */
 .card { 
-    background-color: rgba(38, 58, 39, 0.9); /* Dark green with slight transparency */
-    padding: 1.5rem; 
-    margin: 1rem; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    background-color: var(--card-bg);
+    padding: var(--space-lg);
+    margin: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-smooth);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* Sections */
 section { 
-    background-color: rgba(44, 62, 44, 0.8); /* Slightly darker tone for section contrast */
-    padding: 2rem; 
-    border-radius: 10px; 
-    margin: 1rem;
+    background-color: rgba(44, 62, 44, 0.8);
+    padding: var(--space-xl);
+    border-radius: var(--radius-md);
+    margin: var(--space-md);
 }
 
 /* Footer */
 footer { 
-    background: #1a2a1a; 
-    color: #c8e6c9; 
+    background: var(--deep-forest);
+    color: var(--text-light);
     text-align: center; 
-    padding: 1rem; 
+    padding: var(--space-lg);
     font-size: 0.9rem;
 }
 
@@ -97,7 +174,7 @@ dialog {
     width: 90%;
     max-width: 600px;
     border: none;
-    border-radius: 10px;
+    border-radius: var(--radius-lg);
     padding: 0;
     background: transparent;
 }
@@ -108,54 +185,69 @@ dialog::backdrop {
 
 .dialog-wrapper {
     background-color: #263a27;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
     position: relative;
     color: #f0f8ff;
-
-    /* CHROME SCROLLBARS */
-    max-height: 70vh;    /* Modal takes up 70% of screen height max */
-    overflow-y: auto;    /* Tells Chrome: "If content is too long, scroll here" */
-    display: block;      /* Ensures it behaves as a container */
+    max-height: 70vh;
+    overflow-y: auto;
+    display: block;
 }
 
 .close-btn {
     position: absolute;
-    top: 0.5rem;
-    right: 1rem;
+    top: var(--space-sm);
+    right: var(--space-md);
     background: none;
     border: none;
     color: #f0f8ff;
     font-size: 1.5rem;
     cursor: pointer;
+    transition: transform var(--transition-fast);
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
 }
 
 /* Scrollbars styling */
 /* Chrome, Safari, and Edge */
 .dialog-wrapper::-webkit-scrollbar, ::-webkit-scrollbar {
-    width: 10px; /* Slimmer for a cleaner look */
+    width: 10px;
 }
 
 .dialog-wrapper::-webkit-scrollbar-track, ::-webkit-scrollbar-track {
-    background: #1b2b1a; /* Dark forest floor color */
-    border-radius: 10px;
+    background: var(--dark-green);
+    border-radius: var(--radius-md);
 }
 
 .dialog-wrapper::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
-    background: #2e7d32; /* Forest green "path" */
-    border-radius: 10px;
-    border: 2px solid #1b2b1a; /* Adds a little "gap" around the thumb */
+    background: var(--button-dark);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--dark-green);
 }
 
 .dialog-wrapper::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:hover {
-    background: #4caf50; /* Brighter green when active */
+    background: var(--accent-green);
 }
 
 /* Firefox */
 .dialog-wrapper {
     scrollbar-width: thin;
-    scrollbar-color: #2e7d32 #1b2b1a; /* thumb color | track color */
+    scrollbar-color: var(--button-dark) var(--dark-green);
+}
+
+/* Focus Visible States (Accessibility) */
+:focus-visible {
+    outline: 2px dashed var(--accent-green);
+    outline-offset: 3px;
+    border-radius: var(--radius-md);
 }
 
 /* Falling leaf animation */
@@ -192,12 +284,20 @@ dialog::backdrop {
 
 /* Accessibility: Respect user preference for reduced motion */
 @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
     .leaf {
-        display: none !important; /* Removes moving leaves entirely */
+        display: none !important;
         animation: none !important;
     }
     
-    /* Also stops the smooth scroll if you added it */
     html {
         scroll-behavior: auto !important;
     }

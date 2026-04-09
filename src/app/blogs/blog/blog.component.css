@@ -1,0 +1,180 @@
+/* Blog Post Typography & Semantic Styling */
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+/* Post Title Styling */
+.post-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  color: var(--text-light);
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.5px;
+  line-height: var(--line-height-heading);
+  font-weight: 700;
+}
+
+/* Post Metadata (date, author, category) */
+.post-meta {
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  color: rgba(212, 226, 212, 0.75);
+  margin-bottom: var(--space-lg);
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.post-meta span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Post Content */
+.post-content {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: var(--line-height-body);
+  color: var(--text-lighter);
+  margin-bottom: var(--space-xl);
+}
+
+.post-content h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--text-light);
+  margin: var(--space-xl) 0 var(--space-md) 0;
+  letter-spacing: 0.3px;
+}
+
+.post-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--accent-green);
+  margin: var(--space-lg) 0 var(--space-sm) 0;
+  letter-spacing: 0.3px;
+}
+
+.post-content p {
+  margin-bottom: var(--space-md);
+}
+
+.post-content strong {
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.post-content em {
+  color: rgba(212, 226, 212, 0.9);
+  font-style: italic;
+}
+
+.post-content a {
+  color: var(--accent-green);
+}
+
+/* Code Blocks */
+.post-content code {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9em;
+  color: #81c784;
+}
+
+.post-content pre {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  border-left: 3px solid var(--accent-green);
+  margin: var(--space-lg) 0;
+}
+
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+/* Lists */
+.post-content ul,
+.post-content ol {
+  margin: var(--space-lg) 0;
+  padding-left: var(--space-xl);
+}
+
+.post-content li {
+  margin-bottom: var(--space-sm);
+  line-height: var(--line-height-body);
+}
+
+/* Blockquotes */
+.post-content blockquote {
+  border-left: 4px solid var(--accent-green);
+  padding-left: var(--space-lg);
+  margin: var(--space-lg) 0;
+  color: rgba(212, 226, 212, 0.85);
+  font-style: italic;
+}
+
+/* Post Tags */
+.post-tags {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.tag {
+  display: inline-block;
+  background-color: rgba(76, 175, 80, 0.15);
+  color: var(--accent-green);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: var(--font-main);
+  transition: all var(--transition-fast);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.tag:hover {
+  background-color: rgba(76, 175, 80, 0.25);
+  border-color: var(--accent-green);
+}
+
+/* Mobile Typography Adjustments */
+@media (max-width: 768px) {
+  .post-title {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    margin-bottom: var(--space-md);
+  }
+
+  .post-meta {
+    font-size: 0.85rem;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .post-content {
+    font-size: 0.95rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.3rem;
+    margin: var(--space-lg) 0 var(--space-md) 0;
+  }
+
+  .post-content h3 {
+    font-size: 1.1rem;
+  }
+}
