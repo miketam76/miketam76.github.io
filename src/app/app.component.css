@@ -88,3 +88,71 @@ main {
         padding: 0 10px;
     }
 }
+
+/* Scroll-to-Top Button */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: var(--space-xl);
+    right: var(--space-xl);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--accent-green);
+    color: var(--dark-green);
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-smooth);
+    z-index: 999;
+    min-width: 50px;
+    min-height: 50px;
+    animation: slideUp 300ms ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-to-top-btn:hover {
+    background-color: var(--accent-green-hover);
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+.scroll-to-top-btn:active {
+    transform: scale(0.95);
+}
+
+/* Mobile adjustment for scroll button */
+@media (max-width: 640px) {
+    .scroll-to-top-btn {
+        bottom: var(--space-lg);
+        right: var(--space-lg);
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Respect reduced motion for scroll button animation */
+@media (prefers-reduced-motion: reduce) {
+    .scroll-to-top-btn {
+        animation: none;
+    }
+    
+    .scroll-to-top-btn:hover {
+        transform: none;
+    }
+}

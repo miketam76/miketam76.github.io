@@ -1,5 +1,8 @@
 <article class="card">
-    <h3> Post Title: {{ blog.title }}</h3>
-    Post Date: <time> {{ blog.date }} </time>
+    <h3 class="post-title">{{ blog.title }}</h3>
+    <div class="post-meta">
+        <span class="post-date">📅 {{ blog.date }}</span>
+        <span class="reading-time">⏱️ {{ blog.details | readingTime }}</span>
+    </div>
     <p [innerHTML]="getSafeHtml()"></p> 
 </article>

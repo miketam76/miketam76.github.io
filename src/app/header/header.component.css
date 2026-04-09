@@ -8,26 +8,57 @@ header {
     background-color: var(--dark-green);
     color: var(--text-light);
     padding: var(--space-md);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
     min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: slideDown 0.5s ease-out;
+    border-bottom: 2px solid var(--accent-green);
 }
 
 nav a { 
     color: var(--link-accent);
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color var(--transition-smooth);
     padding: var(--space-sm) var(--space-md);
     display: inline-block;
     border-radius: var(--radius-md);
     font-family: var(--font-main);
+    position: relative;
+    transition: color var(--transition-smooth);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-green);
+    transition: all var(--transition-smooth);
+    transform: translateX(-50%);
 }
 
 nav a:hover { 
     color: var(--link-hover);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Mobile Breakpoint (<640px) */
@@ -40,5 +71,10 @@ nav a:hover {
     nav a {
         font-size: 0.95rem;
         padding: var(--space-xs) var(--space-sm);
+    }
+    
+    nav a::after {
+        bottom: -2px;
+        height: 1px;
     }
 }

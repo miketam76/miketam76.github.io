@@ -1,5 +1,8 @@
 <div class="card">
-    <h3> Project Title: {{ project.title }}</h3>
-    Last Update: <time> {{ project.date }}</time>
-    <p [innerHTML]="getSafeHtml()"></p>
+    <h3 class="project-title">{{ project.title }}</h3>
+    <div class="project-meta">
+        <span class="project-date">📅 Last Updated: {{ project.date }}</span>
+        <span class="project-reading-time">⏱️ {{ project.details | readingTime }}</span>
+    </div>
+    <div class="project-description" [innerHTML]="getSafeHtml()"></div>
 </div>

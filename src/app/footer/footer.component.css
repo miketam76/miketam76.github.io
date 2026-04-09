@@ -1,11 +1,12 @@
 footer {
   background-color: rgba(13, 35, 14, 0.98);
-  color: #f1f5f2;
+  color: var(--text-lighter);
   padding: var(--space-xl) var(--space-lg);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 2px solid rgba(76, 175, 80, 0.3);
 }
 
 .footer-credits {
@@ -24,14 +25,15 @@ footer {
 }
 
 .footer-credits a {
-  color: #81c784;
+  color: var(--accent-green);
   text-decoration: none;
-  transition: opacity var(--transition-smooth);
+  transition: all var(--transition-smooth);
 }
 
 .footer-credits a:hover {
   text-decoration: underline;
   opacity: 1;
+  transform: translateY(-2px);
 }
 
 .footer-copyright {

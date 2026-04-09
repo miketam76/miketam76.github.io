@@ -13,15 +13,20 @@ I am a **Junior Software Developer** and **Algonquin College** graduate with a b
 - **Mindset:** Troubleshooting-first approach to building systems, gained through years in IT support.
 
 ## 🛠 Tech Stack
-- **Frontend:** Angular, TypeScript, HTML5, CSS3
-- **Optimization:** WebP Image Conversion, Responsive Design (375px+), AODA/WCAG Compliance
+- **Frontend:** Angular 19+, TypeScript, HTML5, CSS3, Standalone Components
+- **Backend:** Node.js/Express, REST API, MongoDB
+- **Design System:** CSS Variables (40+), Modern Fonts (Inter + Space Mono), Semantic HTML Classes
+- **Optimization:** GPU-Accelerated Animations, WebP Image Conversion, Responsive Design (375px+), WCAG AA Compliance
 - **Deployment:** GitHub Pages
 
 ## 🌟 Key Features
-- **Responsive Layout:** Perfectly aligned sections from mobile (375px) to desktop (1200px).
-- **Custom Aesthetic:** Dark forest theme with stylized scrollbars synchronized across Chrome and Firefox.
-- **Performance Optimized:** 80%+ Lighthouse performance score via asset compression and WebP formatting.
-- **AODA Ready:** Built with accessibility in mind, featuring motion-reduction support for animations.
+- **Modern Design System:** 40+ CSS variables, smooth animations (150-300ms transitions), GPU-accelerated effects.
+- **Professional UI/UX:** Animated nav underlines, card hover lifts, scroll-to-top button, semantic typography.
+- **Smart Content:** Reading time indicators for blogs & projects, Open Graph meta tags for social sharing, SEO optimization.
+- **Responsive Layout:** Mobile-first design (375px+), responsive typography with clamp(), 44px+ touch targets.
+- **Accessibility:** WCAG AA compliance, keyboard focus states, reduced-motion support, semantic HTML structure.
+- **Performance:** 312 KB optimized bundle, GPU acceleration on animations, 80%+ Lighthouse scores.
+- **Backend Integration:** Connected to MongoDB with REST API for dynamic content delivery.
 
 ## 📁 Project Highlights
 
@@ -32,6 +37,10 @@ A deep-logic cryptography application developed to explore complex algorithmic s
 ### 🏋️ FitForge (Design System)
 **Tech:** Figma  
 A comprehensive Design System created to ensure UI consistency and accessibility for a fitness-tracking platform. This project showcases my proficiency in **Figma**, user experience design, and the creation of standardized components ready for frontend implementation.
+
+### 🌲 My Forest Journey (This Site)
+**Tech:** Angular 19+, TypeScript, MongoDB, REST API, CSS Variables  
+A polished portfolio website featuring a complete design system overhaul with modern UI/UX, semantic components, and backend integration. Demonstrates full-stack development with responsive design, accessibility compliance, and professional animations.
 
 ## 💻 Local Setup
 To run this project locally, ensure you have the [Angular CLI](https://angular.io/cli) installed.

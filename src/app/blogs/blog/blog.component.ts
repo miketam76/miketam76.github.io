@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Blog } from './blog.model';
+import { ReadingTimePipe } from '../../pipes/reading-time.pipe';
 
 @Component({
   selector: 'app-blog',
-  imports: [],
+  imports: [ReadingTimePipe],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })

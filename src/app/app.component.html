@@ -1,6 +1,16 @@
 <app-header></app-header>
 <app-leaf-animation></app-leaf-animation>
 
+<!-- Scroll-to-Top Button -->
+<button 
+    *ngIf="showScrollButton" 
+    class="scroll-to-top-btn" 
+    (click)="scrollToTop()" 
+    aria-label="Scroll to top"
+    title="Back to top">
+    ↑
+</button>
+
 <main>
     <section class="hero-section">
         <h1>Welcome to My Developer Blog</h1>
