@@ -1,6 +1,25 @@
 // blog-data.ts
 export const BLOG_DATA = [
     {
+        id: '7',
+        title: 'Major Portfolio Overhaul: Migrating to Angular 19 with a Modern Design System',
+        date: 'April 9, 2026',
+        details: `
+            <h4>The Evolution of the Forest: Angular 19 & High Performance</h4>
+            <p>
+                One month after moving to the cloud, the portfolio has undergone a complete architectural makeover. I have transitioned the frontend to <strong>Angular 19</strong>, leveraging <strong>Standalone Components</strong> to achieve a lean 312 KB optimized bundle.
+            </p>
+
+            <p>
+                This update introduces a robust <strong>Modern Design System</strong> featuring over 40+ CSS variables, GPU-accelerated animations, and responsive typography using <code>clamp()</code>. The site is now mobile-first (375px+) and fully <strong>WCAG AA compliant</strong>, ensuring a professional and accessible user experience.
+            </p>
+
+            <p>
+                On the performance side, I've integrated WebP image conversion and achieved 80%+ Lighthouse scores. The <strong>Express.js</strong> backend remains the source of truth, but this new frontend ensures that even if the connection fails, the blog gracefully degrades to this local data file.
+            </p>
+        `
+    },
+    {
         id: '6',
         title: 'Recently integrated all blog and project posting to be hosted on Mongo DB Atlas powered by Express.JS',
         date: 'March 6, 2026',
