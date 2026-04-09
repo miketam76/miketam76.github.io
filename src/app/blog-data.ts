@@ -2,20 +2,24 @@
 export const BLOG_DATA = [
     {
         id: '7',
-        title: 'Major Portfolio Overhaul: Migrating to Angular 19 with a Modern Design System',
+        title: 'UI Performance Boost: Dramatically Faster Load Times on Launch',
         date: 'April 9, 2026',
         details: `
-            <h4>The Evolution of the Forest: Angular 19 & High Performance</h4>
+            <h4>Vast Improvements to the UI & Performance</h4>
             <p>
-                One month after moving to the cloud, the portfolio has undergone a complete architectural makeover. I have transitioned the frontend to <strong>Angular 19</strong>, leveraging <strong>Standalone Components</strong> to achieve a lean 312 KB optimized bundle.
+                Today, I've implemented a series of vast improvements to the user interface that have dramatically improved the initial load time of the portfolio. The focus has been on optimizing the frontend experience from the very first moment a user lands on the site.
             </p>
 
             <p>
-                This update introduces a robust <strong>Modern Design System</strong> featuring over 40+ CSS variables, GPU-accelerated animations, and responsive typography using <code>clamp()</code>. The site is now mobile-first (375px+) and fully <strong>WCAG AA compliant</strong>, ensuring a professional and accessible user experience.
+                By leveraging <strong>Angular 19's Standalone Components</strong>, I've significantly reduced the bundle size to just 312 KB. Combined with strategic code splitting and lazy loading of routes, the site now loads exponentially faster on first launch, providing users with an immediate and responsive experience.
             </p>
 
             <p>
-                On the performance side, I've integrated WebP image conversion and achieved 80%+ Lighthouse scores. The <strong>Express.js</strong> backend remains the source of truth, but this new frontend ensures that even if the connection fails, the blog gracefully degrades to this local data file.
+                The UI overhaul also introduced a <strong>Modern Design System</strong> with over 40+ CSS variables and GPU-accelerated animations that enhance the visual experience without sacrificing performance. Every animation is optimized to run smoothly, and the responsive Typography using <code>clamp()</code> ensures a professional appearance across all devices.
+            </p>
+
+            <p>
+                With WebP image conversion and other optimization techniques, the site now consistently achieves 80%+ Lighthouse scores. The result is a portfolio that not only looks great but feels incredibly responsive and fluid, proving that beauty and performance don't have to be mutually exclusive.
             </p>
         `
     },
